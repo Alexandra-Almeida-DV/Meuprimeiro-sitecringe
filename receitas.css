@@ -1,44 +1,37 @@
-.receitas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* b) Definir a formatação dos painéis de receitas */
-.receita {
+body {
     background-color: #e8dbd5;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    width: 300px; /* d) Estabelecer dimensões fixas para os painéis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* c) Definir a formatação para o nome da receita, foto do prato, lista de itens e modo de preparo */
-.receita h2 {
-    margin-top: 0;
+.card {
+margin-bottom: 20px;
+border: 1px solid #a17a60;
 }
 
-.receita img {
-    width: 100%;
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #a17a69;
+    text-align: center;
+}
+ .card-text {
+    font-size: 0.9rem;
+ }
+
+ .d-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-img-top {
     height: auto;
-    border-radius: 10px;
+    max-width: 100%;
 }
 
-.receita ul {
-    list-style-type: disc;
+.container-fluid {
+    margin-left: 0px;
+    margin-right: 0px;
     padding-left: 20px;
-}
-
-.receita p {
-    text-align: justify;
-}
-
-/* e) Utilizar barra de rolagem vertical na área principal, prevendo o aumento do quantitativo de receitas, no modo automático */
-main {
-    height: 80vh;
-    overflow-y: auto;
-    margin-bottom: 5%;
+    padding-right: 30px;
 }

@@ -3,43 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receitas - Bem-vindo</title>
+    <title>Home</title>
+    <!-- Link para o Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ775pc6CCQMcu4lpJ8JMib1aWf4y8hT9RR" crossorigin="anonymous">
+    <!-- Link para o arquivo de estilos -->
     <link rel="stylesheet" href="formatos.css">
 </head>
 <body>
-
-
+    <!-- Cabeçalho e Menu de Navegação -->
     <header>
-        <nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="receitas.html">RECEITAS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cadastro.html">CADASTRO</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <!-- Página Home ativa -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Menu</a>
+                        </li>
+                        <!-- Link para a página de receitas -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="receitas.html">Receitas</a>
+                        </li>
+                        <!-- Link para a página de cadastro -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastro.html">Cadastro</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
+    <!-- Conteúdo Principal -->
+    <main class="overflow-auto" style="height: calc(100vh - 100px);">
+        <div class="container">
+            <img src="./images/logo.png" style="margin-top: -50px; margin-bottom: 0px;"/>
+            <h1 class="text-center" style="margin-top: -50px; margin-bottom: 5px;">Bem-vindo ao Let's Cook!</h1>
+            <p class="text-center" style="margin-top: 0px;">Explore nossas deliciosas receitas.</p>
+        </div>
+    </main>
 
-        <main>
-            <section>
-                <img src="./images/logo.png" class="logotipo" />
-                <h1>Bem-vindo ao Let's Cook!</h1>
-                <p>Descubra as melhores receitas para o seu dia a dia.</p>
-            </section>
-        </main>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; Let's Cook 2024</p>
+    </footer>
 
-        <footer>
-            <p>&copy; 2024 Let's Cook. Todos os direitos reservados.</p>
-        </footer>
-    
-
+    <!-- Script do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGaWdNUFLzQejo1aa6kXy9o+nj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIyAvKx8NwHOvVfq3pUtjOp2M1XpsKfeWWqFf3Nd" crossorigin="anonymous"></script>
 </body>
 </html>
